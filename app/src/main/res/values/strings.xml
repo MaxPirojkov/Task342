@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Task322</string>
+
+
+    <string-array name="lang">
+        <item>Russian</item>
+        <item>English</item>
+    </string-array>
+
+    <string-array name="marg">
+        <item>large</item>
+        <item>middle</item>
+        <item>small</item>
+    </string-array>
+
+    <string name="list">Moscow is the capital of Russia, a multinational city on the Moscow River in the western part of the country. In its historical center is the medieval fortress Kremlin - the residence of the Russian president.</string>
+
+    <string name="textLoc">language selection</string>
+    <string name="textMarg">select indent</string>
+
+</resources>

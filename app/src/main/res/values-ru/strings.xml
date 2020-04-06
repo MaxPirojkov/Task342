@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Таск322</string>
+    <string name="list">Москва – столица России, многонациональный город на Москве-реке в западной части страны. В его историческом центре находится средневековая крепость Кремль – резиденция российского президента.</string>
+
+    <string-array name="lang">
+        <item>Русский</item>
+        <item>Английский</item>
+    </string-array>
+
+    <string-array name="marg">
+        <item>крупный</item>
+        <item>средний</item>
+        <item>мелкий</item>
+    </string-array>
+
+    <string name="textLoc">выбор языка</string>
+    <string name="textMarg">выберете отступ</string>
+
+
+</resources>
