@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import androidx.annotation.IntDef;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.res.Configuration;
@@ -36,17 +37,17 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
                 Spinner spinnerMarg = findViewById(R.id.spinnerMargin);
-                String checkTheme = spinnerMarg.getSelectedItem().toString();
+                @Margin int checkTheme = spinnerMarg.getSelectedItemPosition();
                 System.out.println(checkTheme);
 
                 switch (checkTheme) {
-                    case ("крупный"):
+                    case Margin.LARGE:
                         Utils.changeToTheme(MainActivity.this, Utils.THEME_MARGINLARGE);
                         break;
-                    case ("средний"):
+                    case Margin.MIDDLE:
                         Utils.changeToTheme(MainActivity.this, Utils.THEME_MARGINSMIDDLE);
                         break;
-                    case ("мелкий"):
+                    case Margin.SMALL:
                         Utils.changeToTheme(MainActivity.this, Utils.THEME_MARGINSMALL);
                         break;
                 }
@@ -57,6 +58,14 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+    }
+
+
+    @IntDef({Margin.LARGE, Margin.MIDDLE, Margin.SMALL})
+    @interface Margin {
+        int LARGE = 0;
+        int MIDDLE = 1;
+        int SMALL = 2;
     }
 
     private void setLanguage(String language) {
